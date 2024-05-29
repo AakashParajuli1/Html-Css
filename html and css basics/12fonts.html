@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts in CSS</title>
+    <!-- We can import css fonts from 'fonts.google': -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Jersey+25+Charted&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .libre-franklin-b {
+            font-family: "Libre Franklin", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style :normal;
+            font-size: 20px;
+            line-height: 1.3em;
+        }
+        span{
+            font-weight: bold;
+            font-style: italic;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h3>CSS Fonts</h3>
+    <p>Let's play with fonts. <span>It's very exciting.</span> </p>
+    <p class="libre-franklin-b">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et quam ex ducimus quae vel consectetur aut, eveniet dolor praesentium commodi velit optio molestiae eius repudiandae asperiores minima sequi delectus esse?</p>
+</body>
+</html>

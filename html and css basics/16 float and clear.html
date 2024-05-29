@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        .mukta-extralight {
+          font-family: "Mukta", sans-serif;
+          font-weight: 200;
+          font-style: normal;
+        }
+
+        .mukta-light {
+          font-family: "Mukta", sans-serif;
+          font-weight: 300;
+          font-style: normal;
+        }
+
+        .mukta-regular {
+          font-family: "Mukta", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+
+        .mukta-medium {
+          font-family: "Mukta", sans-serif;
+          font-weight: 500;
+          font-style: normal;
+        }
+
+        .mukta-semibold {
+          font-family: "Mukta", sans-serif;
+          font-weight: 600;
+          font-style: normal;
+        }
+
+        .mukta-bold {
+          font-family: "Mukta", sans-serif;
+          font-weight: 700;
+          font-style: normal;
+        }
+
+        .mukta-extrabold {
+          font-family: "Mukta", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+        }
+      }
+      .container {
+        width: 1000px;
+        border: 3px solid purple;
+        background-color: rgb(80, 153, 80);
+        margin: auto;
+      }
+      .item {
+        border: 3px solid grey;
+        margin: 12px 3px;
+        padding: 12px 3px;
+        background: #ce9d9d;
+      }
+      #fruit {
+        float: left;
+        width: 48%;
+      }
+      #stationary {
+        float: right;
+        width: 48%;
+      }
+      #electronic {
+        /* float: left; */
+        clear: both;
+        width: 100%;
+      }
+      p,h3 {
+        /* text-align: right;
+            text-align: left;
+            text-align: center; */
+        text-align: justify;
+      }
+      h1 {
+        margin: 23px auto;
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to my page:</h1>
+      <div id="fruit" class="item">
+        <h3>Fruit:</h3>
+        <p id="fruitpara" class="para">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aliquid
+          pariatur ipsa perspiciatis deleniti laboriosam eum recusandae sequi
+          quis harum maiores voluptate libero animi rerum, incidunt expedita
+          iusto corporis officiis.
+        </p>
+      </div>
+      <div id="stationary" class="item">
+        <h3>Stationary:</h3>
+        <p id="stationarypara" class="para">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aliquid
+          pariatur ipsa perspiciatis deleniti laboriosam eum recusandae sequi
+          quis harum maiores voluptate libero animi rerum, incidunt expedita
+          iusto corporis officiis.
+        </p>
+      </div>
+      <div id="electronic" class="item">
+        <h3>Electronic:</h3>
+        <p id="electronicpara" class="para">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aliquid
+          pariatur ipsa perspiciatis deleniti laboriosam eum recusandae sequi
+          quis harum maiores voluptate libero animi rerum, incidunt expedita
+          iusto corporis officiis.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

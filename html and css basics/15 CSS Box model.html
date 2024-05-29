@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: cyan;
+        }
+        .container{
+            background-color: olive;
+            border: 2px solid rgb(163, 33, 33);
+            /* We can set margin / padding like this: */
+
+            /* padding: 30px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin : 25px;
+            margin-left : 5px; */
+
+
+            /* padding/margin : top right bottom left */
+            /* eg: padding : 25px 30px 33px 45px; */
+            /* margin : 20px 0 40px 0; */
+
+
+            /* padding/margin : y(top/bottom)  x(left/right) */
+            padding : 40px 45px;
+            margin: 15px 25px;
+
+            border-radius: 12px;
+
+            width: 300px;
+             /* If you do not want the width or size to increase: Use box-sizing */
+             box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading.</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veniam vero nisi dolorum officia repudiandae!</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading.</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veniam vero nisi dolorum officia repudiandae!</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading.</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veniam vero nisi dolorum officia repudiandae!</p>
+    </div>
+    
+</body>
+</html>

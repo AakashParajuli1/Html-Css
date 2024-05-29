@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      .balthazar-regular {
+        font-family: "Balthazar", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      margin: 0px;
+      padding: 0px;
+      /* background: url("images/back.jpg"); */
+      /* height: 2000px; */
+      background-color: black;
+      color: white;
+    }
+    .left {
+      /* border: 2px solid red; */
+      display: inline-block;
+      position: absolute;
+      left: 40px;
+      top: 12px;
+    }
+    .left img {
+      width: 80px;
+      /* filter: invert(100%); */
+    }
+    .left div {
+      line-height: 6px;
+      text-align: center;
+      font-size: 15px;
+    }
+    .mid {
+      /* border: 2px solid rgb(236, 240, 9); */
+      display: block;
+      margin: 20px auto;
+      width: 50%;
+    }
+    .right {
+      /* border: 2px solid blue; */
+      display: inline-block;
+      position: absolute;
+      right: 30px;
+      top: 25px;
+    }
+    .btn {
+      font-family: "Balthazar", serif;
+      margin: 0px 9px;
+      color: white;
+      background-color: black;
+      padding: 4px 14px;
+      border: 2px solid rgb(31, 30, 30);
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: rgb(54, 50, 50);
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      display: inline-block;
+      font-size: 20px;
+    }
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 30px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      color: red;
+    }
+    .container {
+      border: 2px solid white;
+      margin: 62px 90px;
+      padding: 60px 15px;
+      border-radius: 10px;
+      width: 40%;
+    }
+    .container h1{
+        text-align: center;
+        color: white;
+        padding: 20px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 60%;
+        padding: 6px;
+        border: 2px solid black;
+        border-radius: 15px;
+        margin: 7px auto;
+        font-size: 20px;
+        font-family: "Balthazar", serif;
+    }
+    .container button{
+        display: block;
+        margin: auto;
+        width: 60%;
+    }
+    /* .sub{
+        display: inline-block;
+        width: 250px;
+        padding-left: 80px;
+    }
+    .res{
+        display: inline-block;
+        width: 200px; 
+        
+    } */
+  </style>
+  <body>
+    <header class="header">
+      <!-- left box for logo -->
+      <div class="left">
+        <img src="logo.png" />
+        
+      </div>
+      <!-- MId box for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About-Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Right box for search and other buttons -->
+      <div class="right">
+        <button class="btn">Call now</button>
+        <button class="btn">Email us</button>
+      </div>
+    </header>
+    <div class="container">
+        <h1>Fill out this form for getting enrolled:</h1>
+        <form>
+            <div class="form-group">
+               
+                <input type="text" name="name" id="name" placeholder="Enter your name:">
+            </div>
+            <div class="form-group">
+            
+            <input type="email" name="email" id="email" placeholder="Enter your email id:">
+        </div>
+        <div class="form-group">
+            
+            <input type="num" name="phone" id="phone" placeholder="Enter your phone number:">
+        </div>
+        <!-- <div class="sub"> -->
+            <button type="submit" class="btn">Save details</button>
+        <!-- </div> -->
+        <!-- <div class="res"> -->
+            <button type="reset" class="btn">Clear all</button>
+        <!-- </div> -->
+        </form>
+    </div>
+  </body>
+</html>
